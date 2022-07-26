@@ -18,6 +18,97 @@ img {
 
 /*** UTILITIES ***/
 
+.flex {
+    display: flex;
+}
+
+.button {
+    border-radius: 13px;
+    border-style: none;
+    padding: 7px 10px;
+    font-size: 0.7rem;
+}
+
 
 
 /*** CONTENT ***/
+
+
+/* header */
+header {
+    background-color: #0184fd;
+    max-width: 100%;
+    /* position: fixed; */
+}
+
+.container-header {
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 15px;
+    color: #fff;
+}
+
+.container-header img {
+    width: 10%;
+}
+
+nav {
+    display: none;
+}
+
+
+
+
+/*** RESPONSIVE ***/
+
+/* TABLET */
+
+/* header */
+@media screen and (min-width: 480px) {
+    header {}
+}
+
+
+
+/* DESKTOP */
+
+/* header */
+@media screen and (min-width: 768px) {
+
+    .container-header {
+        margin: 0 15%;
+    }
+
+    header .fa-solid {
+        display: none;
+    }
+
+    .container-header img {
+        width: 8%;
+    }
+
+    nav {
+        display: inline-block;
+    }
+
+    nav ul {
+        align-items: center;
+    }
+
+    nav ul li {
+        list-style-type: none;
+        font-size: 0.7rem;
+    }
+
+    nav ul li a {
+        text-decoration-line: none;
+        color: white;
+        padding: 0 10px;
+    }
+
+
+
+
+
+
+}
