@@ -144,6 +144,7 @@ nav {
 
 #planning div:first-of-type h2 {
     margin: 40px 0;
+    font-size: 2rem;
 }
 
 #planning div:last-of-type {
@@ -211,6 +212,10 @@ nav {
         justify-content: flex-start;
     }
 
+    /* planning */
+    #planning div:first-of-type h2 {
+        font-size: 3rem;
+    }
 
 }
 
