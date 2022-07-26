@@ -284,6 +284,32 @@ nav {
     }
 
     /* planning */
+    #planning {
+        flex-direction: row;
+    }
+
+    #planning div:first-of-type {
+        margin-left: 20%;
+        padding-right: 20px;
+        margin-bottom: 0;
+    }
+
+    #planning div:first-of-type h2 {
+        font-size: 2rem;
+        padding-top: 60px;
+    }
+
+    #planning div:last-of-type {
+        margin-right: 20%;
+        padding-left: 20px;
+        align-self: flex-end;
+    }
+
+    #planning div:last-of-type img {
+        width: 50%;
+    }
+
+
 
 
 
