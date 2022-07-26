@@ -22,10 +22,14 @@ img {
     display: flex;
 }
 
+.column {
+    flex-direction: column;
+}
+
 .button {
     border-radius: 13px;
     border-style: none;
-    padding: 7px 10px;
+    padding: 6px 10px;
     font-size: 0.7rem;
 }
 
@@ -34,7 +38,7 @@ img {
 /*** CONTENT ***/
 
 
-/* header */
+/* HEADER */
 header {
     background-color: #0184fd;
     max-width: 100%;
@@ -49,11 +53,77 @@ header {
 }
 
 .container-header img {
-    width: 10%;
+    width: 20%;
 }
 
 nav {
     display: none;
+}
+
+/* MAIN */
+
+/* jumbotron */
+#jumbotron {
+    padding: 60px 30px;
+}
+
+.jumbotron-card {
+    background-color: #b5dcff;
+    color: #5a6e7f;
+    align-items: center;
+    justify-content: space-around;
+    line-height: 25px;
+    padding: 30px 30px 30px;
+    margin-top: 20px;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.jumbotron-card h3 {
+    font-size: 1.6rem;
+    color: #0c89fd;
+    padding-bottom: 30px;
+}
+
+.jumbotron-card p {
+    font-size: 1rem;
+}
+
+.jumbotron-card i {
+    font-size: 5rem;
+    color: #0c89fd;
+    padding-bottom: 25px;
+}
+
+
+#jumbotron div:first-child {
+    margin-top: 0;
+    justify-content: space-between;
+    padding-bottom: 0;
+    text-align: left;
+}
+
+#jumbotron div:first-child i {
+    font-size: 1rem;
+    color: white;
+    padding: 0 5px 0 0;
+    vertical-align: middle;
+}
+
+#jumbotron div:first-child button {
+    color: white;
+    background-color: #0184fd;
+    border-radius: 13px;
+    border-style: none;
+    padding: 6px 60px;
+    font-size: 1rem;
+    font-weight: bold;
+    align-self: flex-start;
+    margin: 25px 0;
+}
+
+#jumbotron div:first-child h3 {
+    align-self: flex-start;
 }
 
 
@@ -63,7 +133,9 @@ nav {
 
 /* TABLET */
 
-/* header */
+/* MAIN */
+
+/* jumbotron */
 @media screen and (min-width: 480px) {
     header {}
 }
