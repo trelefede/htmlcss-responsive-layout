@@ -48,7 +48,7 @@ header {
 .container-header {
     justify-content: space-between;
     align-items: center;
-    padding: 10px 15px;
+    padding: 10px 30px;
     color: #fff;
 }
 
@@ -103,6 +103,11 @@ nav {
     text-align: left;
 }
 
+#jumbotron div:first-child img {
+    width: 70%;
+    align-self: flex-start;
+}
+
 #jumbotron div:first-child i {
     font-size: 1rem;
     color: white;
@@ -115,7 +120,7 @@ nav {
     background-color: #0184fd;
     border-radius: 13px;
     border-style: none;
-    padding: 6px 60px;
+    padding: 8px 75px;
     font-size: 1rem;
     font-weight: bold;
     align-self: flex-start;
@@ -137,16 +142,43 @@ nav {
 
 /* jumbotron */
 @media screen and (min-width: 480px) {
-    header {}
+
+    .container-header {
+        padding: 10px 40px;
+    }
+
+    .container-header img {
+        width: 15%;
+    }
+
+    #jumbotron {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .jumbotron-card {
+        width: calc(100% / 3 - 20px);
+        margin: 0 10px 20px;
+    }
+
+    #jumbotron div:first-child {
+        width: calc(100% / 3 *2 - 20px);
+    }
+
+    #clean-code {
+        justify-content: flex-start;
+    }
+
+
 }
 
 
 
 /* DESKTOP */
 
-/* header */
 @media screen and (min-width: 768px) {
 
+    /* header */
     .container-header {
         margin: 0 15%;
     }
@@ -177,6 +209,22 @@ nav {
         color: white;
         padding: 0 10px;
     }
+
+    /* jumbotron */
+    .container-header {
+        padding: 10px 10px;
+    }
+
+    #jumbotron {
+        margin: 0 15%;
+        padding: 60px 0;
+    }
+
+    #clean-code {
+        justify-content: space-around;
+    }
+
+
 
 
 
