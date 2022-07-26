@@ -220,9 +220,19 @@ nav {
         padding: 60px 0;
     }
 
+    #jumbotron div:first-child {
+        flex-direction: row;
+    }
+
+    #jumbotron div:first-child img {
+        width: 40%;
+        align-self: flex-end;
+    }
+
     #clean-code {
         justify-content: space-around;
     }
+
 
 
 
